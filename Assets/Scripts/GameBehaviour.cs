@@ -120,33 +120,33 @@ public class GameBehaviour : MonoBehaviour
         _loseText.gameObject.SetActive(false);
         _winText.gameObject.SetActive(true);
 
-        if (_levelName == "Easy")
-        {
-            if (_attemps < YandexGame.savesData.RecordEasy)
-            {
-                YandexGame.NewLeaderboardScores(_levelName, _attemps);
-                YandexGame.savesData.RecordEasy = _attemps;
-                YandexGame.SaveProgress();
-            }
-        }
-        if (_levelName == "Normal")
-        {
-            if (_attemps < YandexGame.savesData.RecordNormal)
-            {
-                YandexGame.NewLeaderboardScores(_levelName, _attemps);
-                YandexGame.savesData.RecordNormal = _attemps;
-                YandexGame.SaveProgress();
-            }
-        }
-        if (_levelName == "Hard")
-        {
-            if (_attemps < YandexGame.savesData.RecordHard)
-            {
-                YandexGame.NewLeaderboardScores(_levelName, _attemps);
-                YandexGame.savesData.RecordHard = _attemps;
-                YandexGame.SaveProgress();
-            }
-        }
+        //if (_levelName == "Easy")
+        //{
+        //    if (_attemps < YandexGame.savesData.RecordEasy)
+        //    {
+        //        YandexGame.NewLeaderboardScores(_levelName, _attemps);
+        //        YandexGame.savesData.RecordEasy = _attemps;
+        //        YandexGame.SaveProgress();
+        //    }
+        //}
+        //if (_levelName == "Normal")
+        //{
+        //    if (_attemps < YandexGame.savesData.RecordNormal)
+        //    {
+        //        YandexGame.NewLeaderboardScores(_levelName, _attemps);
+        //        YandexGame.savesData.RecordNormal = _attemps;
+        //        YandexGame.SaveProgress();
+        //    }
+        //}
+        //if (_levelName == "Hard")
+        //{
+        //    if (_attemps < YandexGame.savesData.RecordHard)
+        //    {
+        //        YandexGame.NewLeaderboardScores(_levelName, _attemps);
+        //        YandexGame.savesData.RecordHard = _attemps;
+        //        YandexGame.SaveProgress();
+        //    }
+        //}
 
     }
 
